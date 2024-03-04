@@ -4,6 +4,7 @@ public class Wallet
 {
 
     private int balance = 0;
+
     public boolean isEmpty()
     {
         return true;
@@ -19,7 +20,8 @@ public class Wallet
         return balance;
     }
 
-    public void deposit(int i) {
+    public void deposit(int i)
+    {
         this.balance = i;
     }
 }
