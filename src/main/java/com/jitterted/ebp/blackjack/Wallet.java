@@ -3,6 +3,7 @@ package com.jitterted.ebp.blackjack;
 public class Wallet
 {
 
+    private int balance = 0;
     public boolean isEmpty()
     {
         return true;
@@ -15,7 +16,10 @@ public class Wallet
 
     public int getBalance()
     {
-        return 0;
+        return balance;
     }
 
+    public void deposit(int i) {
+        this.balance = i;
+    }
 }

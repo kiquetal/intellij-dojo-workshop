@@ -14,7 +14,14 @@ public class WalletTest
     @Test
     void testNothing()
     {
-
         assertThat(0).isZero();
+    }
+
+    @Test
+    void testAddMoney()
+    {
+        Wallet newWallet = new Wallet();
+        newWallet.deposit(100);
+        assertThat(newWallet.getBalance()).isEqualTo(100);
     }
 }
