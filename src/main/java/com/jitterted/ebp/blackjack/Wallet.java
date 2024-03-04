@@ -17,6 +17,7 @@ public class Wallet
 
     public int getBalance()
     {
+
         return balance;
     }
 
