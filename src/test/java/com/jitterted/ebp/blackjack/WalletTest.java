@@ -6,8 +6,8 @@ public class WalletTest
     @Test
     void testWalletBalanceIsInitiallyZer()
     {
-        Wallet wallet = new Wallet();
-        assertThat(wallet.getBalance()).isEqualTo(0);
+        Wallet walletObject = new Wallet();
+        assertThat(walletObject.getBalance()).isEqualTo(0);
 
     }
 
@@ -15,6 +15,7 @@ public class WalletTest
     void testNothing()
     {
         assertThat(0).isZero();
+
     }
 
     @Test

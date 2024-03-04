@@ -33,7 +33,11 @@ public class Game {
                                    .cursor(3, 1)
                                    .fgBrightBlack().a("Hit [ENTER] to start..."));
 
-        System.console().readLine();
+        try {
+            System.console().readLine();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
 
         game.initialDeal();
@@ -48,11 +52,13 @@ public class Game {
 
     public void initialDeal() {
 
-        // deal first round of cards, players first
-        playerHand.add(deck.draw());
-        dealerHand.add(deck.draw());
+        dealRoundCards();
+        dealRoundCards();
+    }
 
-        // deal next round of cards
+    private void dealRoundCards()
+    {
+        // deal first round of cards, players first
         playerHand.add(deck.draw());
         dealerHand.add(deck.draw());
     }
