@@ -2,14 +2,20 @@ package com.jitterted.ebp.blackjack;
 
 public class Wallet
 {
-    private int balance;
+
+    public boolean isEmpty()
+    {
+        return true;
+    }
+
     public Wallet()
     {
-        balance = 0;
+
     }
 
     public int getBalance()
     {
-        return balance;
+        return 0;
     }
+
 }
